@@ -1,0 +1,42 @@
+.Home{
+    background: #181818;
+    display: flex;
+    height: 100vh;
+    padding-top: 80px;
+    position: relative;
+}
+
+.Home .Container h1{
+    margin: 0;
+    color: white;  
+}
+
+.Home .Container .Hello{
+    margin: 0px;
+    color: white;  
+    font-size: 65px;
+}
+
+.Home .Container .title{
+    margin: 0px;
+    color: white;  
+    font-size: 30px;
+}
+
+
+.Home .Container {
+    z-index: 998;
+    margin-left: 5%;
+    margin-top: 15%;
+    
+}
+
+.Home .Openimg{
+    height: 75%;
+    position: absolute;
+    right: 15%;
+    top: 0%;
+
+  
+}
+
