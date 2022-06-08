@@ -5,6 +5,7 @@
     padding-top: 80px;
     position: relative;
     width: 100%;
+    
 }
 
 .Home .Container h1{
@@ -29,17 +30,24 @@
     z-index: 998;
     margin-left: 5%;
     margin-top: 15%;
+
     
 }
 
 .Home .Openimg{
     height: 75%;
+    
     position: absolute;
     right: 15%;
     top: 0%;
-
+    
   
 }
 @media (max-width: 1300px){
+
+    .Home{
+        flex-direction: column;
+        
+    }
 
 }
