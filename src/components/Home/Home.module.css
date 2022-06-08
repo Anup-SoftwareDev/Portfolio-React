@@ -4,6 +4,7 @@
     height: 100vh;
     padding-top: 80px;
     position: relative;
+    width: 100%;
 }
 
 .Home .Container h1{
