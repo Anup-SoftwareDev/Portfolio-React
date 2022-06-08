@@ -11,9 +11,9 @@
     color: white;
 }
 .NavBar .NameTag {
-    position: fixed;
-    margin-right: 85%;
-    width: 200px;
+    position: absolute;
+    margin-right: 87%;
+  
     
 }
 .NavBar .NameTag a{

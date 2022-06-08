@@ -6,13 +6,15 @@
 
 .AboutMe .Container{
     display: flex;
+    margin: 0%;
 }
 
 .AboutMe .Container .Text{
     width: 90%;
     margin-left: 3%;
-    margin-right: 10%;
-    justify-content:right;
+    margin-right: 0%;
+    justify-content:center;
+    
 }
 
 .AboutMe .Container .Text h2{
@@ -23,17 +25,43 @@
 .AboutMe .Container .Text p{
     font-weight: 600;
     font-size: 30px;
+    
 }
 
 .AboutMe .Container .Photo {
-   width: 50%;
+   width: 30%;
    display: flex;
+   justify-content: center;
+   align-items: center;
+  
+   
 }
 
 .AboutMe .Container .Photo .Me{
-    
-    height: 500px;
+    height: 400px;
     margin-top: 10%;
-    border-radius: 10%;
-    justify-content:center;
+    border-radius: 20%;
+    background-color: rgb(66, 57, 57);
+}
+
+@media (max-width: 900px){
+
+    .AboutMe{
+        height: 1500px;
+    }
+
+    .AboutMe .Container{
+        flex-direction: column;
+        align-items:center;
+    }
+    .AboutMe .Container .Photo {
+        width: 100%;
+    }
+    .AboutMe .Container .Photo .Me{
+        width: 50%;
+        max-height: 500px;
+    }   
+   
+  
+
 }
