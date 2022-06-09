@@ -52,11 +52,12 @@
     .NavBar .MobileNavigation{
         display: flex;
         align-items: center;
+        width: 100%;
     }
 
     .NavBar .MobileNavigation .Hamburger{
         position: absolute;
-        right: 5%;
+        margin-left: 85%;
         cursor: pointer;
 
     }
@@ -73,7 +74,7 @@
     }
 
     .NavBar nav ul li{
-        padding-left: 15%;
+        padding-left: 35%;
     }
     .NavBar{
         opacity: 1;
