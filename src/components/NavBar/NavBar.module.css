@@ -9,6 +9,7 @@
     justify-content: right;
     align-items: center;
     color: white;
+    position: fixed;
 }
 .NavBar .NameTag {
     position: absolute;
@@ -52,12 +53,12 @@
     .NavBar .MobileNavigation{
         display: flex;
         align-items: center;
-        width: 100%;
+         width: 100%;
     }
 
     .NavBar .MobileNavigation .Hamburger{
         position: absolute;
-        margin-left: 85%;
+        margin-left: 0%;
         cursor: pointer;
 
     }
@@ -86,4 +87,3 @@
 
 
 }
-

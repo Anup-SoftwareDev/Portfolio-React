@@ -5,7 +5,7 @@
     padding-top: 80px;
     position: relative;
     width: 100%;
-    
+ 
 }
 
 .Home .Container h1{
@@ -36,8 +36,11 @@
 
 .Home .Openimg{
     height: 75%;
-    
-    position: absolute;
+    width: 75%;
+    position: relative;
+    margin-right: 0%;
+    padding-right: 0%;
+    padding-left: 0%;
     right: 15%;
     top: 0%;
     
