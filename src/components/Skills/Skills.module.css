@@ -2,7 +2,7 @@
     background-color: #141313;
     padding-bottom: 5%;
     padding-top: 0%;
-    height: 1000px;
+    height: 100vh;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -42,11 +42,11 @@
 }
 
 .Skills .Container .List {
-    flex-basis: 33%;
+    flex-basis: 100%;
     background-color: black;
     box-shadow: 0 0 12px 4px white;
     border-radius: 9px;
-    margin-bottom: 2px;  
+    margin-bottom: 20px;  
 }
 
 .Skills .List ul li {
