@@ -11,7 +11,8 @@ const About = () => {
                 <div className = {classes.Text}>
                     <h2>Hello! I'm Anup</h2>
                     <p>
-                    I am passionate about making lives of people around me better through Software Development. When I am not developing software, I love spending time outdoors and playing various sports. I specialise in Web Development for small and large organisations. I have a degree in Electronic engineering and hence also have exposure to Embedded systems programming.
+                    I am a Full Stack Web
+Developer with a background in Electronic Engineering.I am passionate about making lives of people around me better through Software Development. When I am not developing software, I love spending time outdoors and playing various sports. 
                     </p>
                 </div>
                 <div className = {classes.Photo}>

@@ -1,8 +1,8 @@
 .Contact{
     background: black;
+    display: flex;
     height: 10vh;
-    display: fixed;
-    height: 100vh;
+    
 
 }
 .Contact .ContactIcons{

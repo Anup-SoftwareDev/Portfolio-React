@@ -2,48 +2,34 @@ import classes from './Skills.module.css'
 import PageHeader from './../PageHeader/PageHeader'
 import project from './../../img/projects.jpg';
 
-const listTitleStyle = { fontWeight: 900, color: '#9B1FE8', marginBottom: '4px'}
+const listTitleStyle = {fontWeight: 900, color: '#9B1FE8', marginBottom: '4px'}
 
-const backendSkills = 
+const myKidActivity = 
 <ul>
-    <li style = {listTitleStyle}>BACKEND</li>
-    <li>Scala - Java - SQL</li>
-    <li>AKKA - Spring Boot - Slick</li>
+    <li style = {listTitleStyle}>My-Kid-Activity App</li>
+    <li></li>
+    <li></li>
 </ul>
-const frontEndSkills = 
+const canineWisdom = 
 <ul>
-    <li style = {listTitleStyle}>FRONTEND</li>
-    <li>ReactJS - HTML - CSS - Redux</li>
-</ul>
-
-const messagingSkills = 
-<ul>
-    <li style = {listTitleStyle}>MESSAGING</li>
-    <li>ActiveMQ</li>
-
+    <li style = {listTitleStyle}>Canine Wisdom</li>
+    <li></li>
 </ul>
 
-const dataScienceSkills = 
+
+const budgetSolutions = 
 <ul>
-    <li style = {listTitleStyle}>DATA SCIENCE TOOLS</li>
-    <li>ELK Stack - Apache Spark</li>
+    <li style = {listTitleStyle}>Budget Solutions</li>
+    <li></li>
 </ul>
-const buildToolsSkills = 
-<ul>
-    <li style = {listTitleStyle}>BUILD TOOLS</li>
-    <li>Maven - SBT</li>
-</ul>
-const otherSkills = 
-<ul>
-    <li style = {listTitleStyle}>OTHER</li>
-    <li>Git - Docker - Jenkins - Json - XML</li>
-</ul>
-const totalSkills = [backendSkills, frontEndSkills, messagingSkills, dataScienceSkills, buildToolsSkills,otherSkills  ]
+
+
+const totalSkills = [myKidActivity, canineWisdom, budgetSolutions  ]
 
 const Skills = () => {
     return ( 
     <div className = {classes.Skills} id = "skills">
-         <PageHeader title={'What about Projects?'}/>
+         <PageHeader title={'Projects'}/>
          <img src={project} alt = "project"></img>
         <div className={classes.Container}>
             {totalSkills.map((skills)=>{
