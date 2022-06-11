@@ -62,9 +62,10 @@
         width: 100%;
     }
     .AboutMe .Container .Photo .Me{
-        max-height: 700px;
-        height: 70%;
-        width: 70%;
+        max-height: 500px;
+        max-width: 350px;
+        height: 60%;
+        width: 60%;
     }   
     .AboutMe .Container .Text{
         width: 100%;
