@@ -1,21 +1,40 @@
-import { useForm } from '@formspree/react';
-import classes from './Contact.module.css';
+import React from 'react';
+import { useForm, ValidationError } from '@formspree/react';
 
-
-const MyForm = () => {
-  const [state, handleSubmit] = useForm('{your-form-id}');
+function ContactForm() {
+  const [state, handleSubmit] = useForm("xrgjdalo");
   if (state.succeeded) {
-    return <div style = {{color: 'white'}}>Thank you for signing up!</div>;
+      return <p>Thanks for joining!</p>;
   }
   return (
-    <div className={classes.MyForm}>  
-    <form onSubmit={handleSubmit}>
-      <label htmlFor="email">Email</label>
-      <input id="email" type="email" name="email" />
-      <button type="submit" disabled={state.submitting}>Sign up</button>
+      <form onSubmit={handleSubmit}>
+      <label htmlFor="email">
+        Email Address
+      </label>
+      <input
+        id="email"
+        type="email" 
+        name="email"
+      />
+      <ValidationError 
+        prefix="Email" 
+        field="email"
+        errors={state.errors}
+      />
+      <textarea
+        id="message"
+        name="message"
+      />
+      <ValidationError 
+        prefix="Message" 
+        field="message"
+        errors={state.errors}
+      />
+      <button type="submit" disabled={state.submitting}>
+        Submit
+      </button>
     </form>
-    </div>
-  )
+  );
 }
 
-export default MyForm;
+export default ContactForm;

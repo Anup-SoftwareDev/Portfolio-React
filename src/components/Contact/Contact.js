@@ -2,7 +2,7 @@ import { FaGithub, FaLinkedin} from "react-icons/fa";
 import classes from './Contact.module.css';
 import MyForm from "./Form";
 import PageHeader from './../PageHeader/PageHeader'
-
+import { FormspreeProvider } from "@formspree/react";
 
 
 const handleURL = (url) => {
@@ -11,6 +11,7 @@ const handleURL = (url) => {
 
 const Contact = () => {
     return ( 
+    <FormspreeProvider project = "1962860304660430753">    
     <div className = {classes.Contact} id = "contact"> 
     <PageHeader title={'Contact'}/>
         <MyForm/>
@@ -19,6 +20,7 @@ const Contact = () => {
             <FaLinkedin color = 'white' size='30px' style ={{padding: '1%'}} onClick={handleURL("https://www.linkedin.com/in/anup-kuriakose-86201567/")}/>
         </div>
     </div>
+    </FormspreeProvider>
      );
 }
  
