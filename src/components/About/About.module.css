@@ -26,9 +26,7 @@
 
 .AboutMe .Container .Text p{
     font-weight: 600;
-    font-size: 30px;
-   
-    
+    font-size: 30px;  
 }
 
 .AboutMe .Container .Photo {
@@ -36,13 +34,10 @@
    display: flex;
    justify-content: center;
    align-items: center;
-   
-  
-   
 }
 
 .AboutMe .Container .Photo .Me{
-    height: 400px;
+    height: 350px;
     margin-top: 10%;
     border-radius: 20%;
     background-color: rgb(66, 57, 57);
@@ -62,17 +57,14 @@
         width: 100%;
     }
     .AboutMe .Container .Photo .Me{
-        max-height: 500px;
-        max-width: 350px;
+        max-height: 400px;
+        max-width: 300px;
         height: 60%;
         width: 60%;
     }   
     .AboutMe .Container .Text{
         width: 100%;
     }
-   
-  
-
 }
 
 @media (max-width: 500px){
