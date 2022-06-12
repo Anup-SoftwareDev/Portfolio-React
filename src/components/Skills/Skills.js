@@ -1,46 +1,76 @@
 import classes from './Skills.module.css'
 import PageHeader from './../PageHeader/PageHeader'
-import project from './../../img/projects.jpg';
+import MyKidActivity from './../../img/MyKidActivity.jpeg';
+import sleepingDog from './../../img/sleepingDog.jpg';
+import budget from './../../img/Budget.png';
+import { FaGithub} from "react-icons/fa";
+import {BsGlobe} from "react-icons/bs";
 
-const listTitleStyle = {fontWeight: 900, color: '#9B1FE8', marginBottom: '4px'}
+import projects from './projects.json';
 
-const myKidActivity = 
-<ul>
-    <li style = {listTitleStyle}>My-Kid-Activity App</li>
-    <li></li>
-    <li></li>
-</ul>
-const canineWisdom = 
-<ul>
-    <li style = {listTitleStyle}>Canine Wisdom</li>
-    <li></li>
-</ul>
+const listTitleStyle = { fontWeight: 900, fontSize: '2rem' , color: '#9B1FE8', marginBottom: '4px'}
 
-
-const budgetSolutions = 
-<ul>
-    <li style = {listTitleStyle}>Budget Solutions</li>
-    <li></li>
-</ul>
-
-
-const totalSkills = [myKidActivity, canineWisdom, budgetSolutions  ]
-
+const array = [MyKidActivity, sleepingDog, budget]
 const Skills = () => {
+    //console.log(projects[1].languages)
+
+    const handleURL = (url) => {
+      
+        return () => window.open(url, "_blank")
+    }
+
     return ( 
     <div className = {classes.Skills} id = "skills">
-         <PageHeader title={'Projects'}/>
-         <img src={project} alt = "project"></img>
-        <div className={classes.Container}>
-            {totalSkills.map((skills)=>{
-                return(
-                    <div className = {classes.List}>
-                        {skills}
-                    </div>
-                )
-                })};
-        </div>
-    
+            <PageHeader title={'Projects'}/>
+            <div className={classes.Container}>
+                
+            { /*  {totalSkills.map((skills)=>{  */}
+            {projects.map((project)=>{
+                    return(
+                        <div className = {classes.List}>
+                             <div className={classes.Heading}>
+                                <ul>
+                                    <li style = {listTitleStyle}>{project.number}.{project.name}</li>
+                                </ul>
+                            </div>
+                             <div className={classes.Box}>
+                                <div className={classes.ImageLink}>
+                                {console.log(project.image)}
+                                    <img src = {array[project.image]} alt = 'project'/>   
+                                </div>
+                                <div className={classes.Details}>
+                                    <div className = {classes.Containers}>Programming Languages
+                                        <ul>
+                                            {project.languages.map((lan)=>{return(<li>{lan}</li>)})}
+                                        </ul>
+                                    </div>
+                                    <div className = {classes.Description}>Description
+                                        <p>{project.Description}</p>
+                                    </div>
+                                    <div className = {classes.Links}>
+                                            Links
+                                            {(project.website)&&
+                                                <div className = {classes.Website}>
+                                                <BsGlobe color = 'white' size='30px' style ={{padding: '0%'}} onClick={handleURL(project.website)}/>
+                                                <a href={project.website} target="_blank" rel="noopener noreferrer">{project.website}</a>
+                                            </div>}
+                                            {(project.github)&&
+                                            <div className = {classes.Github}>
+                                                <FaGithub color = 'white' size='30px' style ={{padding: '0%'}} onClick={handleURL(project.github)}/>
+                                                <a href={project.github} target="_blank" rel="noopener noreferrer">{project.github}</a>
+                                            </div>}          
+                            </div>   
+                                    
+                                </div>
+                            </div> 
+
+                           
+
+                        </div>
+                    )
+                    })};
+            </div>
+                
     </div>
      );
 }

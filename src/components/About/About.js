@@ -3,6 +3,7 @@ import PageHeader from './../PageHeader/PageHeader'
 import Anup from './../../img/Anup.png';
 
 
+
 const About = () => {
     return ( 
         <div className = {classes.AboutMe} id = "about">
@@ -18,6 +19,7 @@ Developer with a background in Electronic Engineering.I am passionate about maki
                 <div className = {classes.Photo}>
                     <img className = {classes.Me} src={Anup} alt = "Anup"></img>
                 </div>
+
             </div>
         </div>
      );

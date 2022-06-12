@@ -1,0 +1,8 @@
+[    
+{"number":"1","name":"My-Kid-Activity App", "languages":["Ruby-on-Rails", "Bootstrap"], "Description":"A prototype two-sided Marketplace Application, that facilitates children's extracurricular activities.It allows organisations to register activities and parents to register children into different activities.","website":"https://morning-garden-60590.herokuapp.com/", "github":"https://github.com/Anup-SoftwareDev/MyKid_Activity_app", "image":"0"},
+    
+{"number":"2","name":"Canine Wisdom", "languages":["JavaScript","React"],  "Description":"A simple Web application built in React to practice using State and third-party APIs.It fetches from two external APIs to output a picture of a dog, a famous quotation and its author's name at the press of a button.","website":"https://dashing-starburst-0db3e2.netlify.app/", "github":"https://github.com/Anup-SoftwareDev/canineWisdom", "image":"1"},
+
+{"number":"3","name":"Budget Solutions", "languages":["Ruby"],  "Description":"An application designed to run in the Terminal and allows users to enter various information regarding their personal expenses and Income. The application calculates the user's current budget situation,offers solutions on how to improve it and outputs all the data into a text file.","website":"", "github":"https://github.com/Anup-SoftwareDev/Budget-Solutions", "image":"2"}
+
+]
