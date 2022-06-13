@@ -30,9 +30,26 @@
 
 }
 
+@media (max-width: 500px){
+    .Container hr{
+        width: 15%
+    }
+
+}
+
 @media (max-width: 400px){
     .Container{
         padding-top: 25%;
     }
 
+}
+@media (max-width: 320px){
+    .Container hr{
+        width: 10%
+    }
+}
+@media (max-width: 260px){
+    .Container hr{
+        display: none;
+    }
 }
