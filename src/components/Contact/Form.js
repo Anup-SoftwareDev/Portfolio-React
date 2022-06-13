@@ -10,7 +10,7 @@ function ContactForm() {
   return (
     <div className = {classes.MyForm} >
       <form onSubmit={handleSubmit}>
-      <div>
+      <div className = {classes.Email}>
         <label htmlFor="email">
           Email Address
         </label>
@@ -34,7 +34,7 @@ function ContactForm() {
         />
        </div> 
 
-       <div> 
+       <div className={classes.Message}> 
             <label htmlFor="email">
               Message
             </label>
@@ -55,7 +55,7 @@ function ContactForm() {
             />
        </div> 
         <button type="submit" disabled={state.submitting}>
-          Submit
+          Send Message
         </button>
       {state.succeeded&&
       <p>Thank you for the message. I will get back to you shortly!</p>}

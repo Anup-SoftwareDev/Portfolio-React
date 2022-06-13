@@ -21,8 +21,50 @@
 }
 
 .MyForm {
-    color: white;
-    font-size: 20px;
+    color: #ffffff;
+    font-size: 1.5rem;
     display: flex;
     flex-direction: column;
+    padding-left: 5%;   
 }
+
+.MyForm .Email {
+    display: flex;
+    flex-direction: column;
+ }
+
+ .MyForm .Email input {
+    width: 50%;
+    height: 3vh;
+    min-width: 260px;
+    
+ }
+
+ .MyForm .Message {
+    display: flex;
+    flex-direction: column;
+    
+ }
+
+ .MyForm .Message textarea {
+    width: 70%;
+    height: 33vh;
+    min-width: 300px;
+    margin-bottom: 2%;
+ }
+
+ .MyForm button {
+    font-size: 1.25rem;
+    font-weight: 900;
+    margin-bottom: 10%;
+
+ }
+
+ @media (max-width: 510px){
+
+    .MyForm {
+        font-size: 1.25rem;       
+    }
+    
+
+ }
