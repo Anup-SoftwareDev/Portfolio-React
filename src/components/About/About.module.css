@@ -92,14 +92,18 @@
     .AboutMe .Container .Text a button{
         font-size: 1.5rem;
     }
+    .AboutMe .Container .Photo .Me{
+        height: 60%;
+        width: 50%;
+     }   
 
 }
 
 @media (max-width: 500px){
 
     .AboutMe .Container .Photo .Me{
-        height: 80%;
-        width: 80%;
+        height: 60%;
+        width: 50%;
      }   
 
      .AboutMe .Container .Text p{
