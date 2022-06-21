@@ -17,7 +17,7 @@ const Contact = () => {
         <MyForm/>
         <div className = {classes.ContactIcons}>
             <FaGithub color = 'white' size='30px' style ={{padding: '1%'}} onClick={handleURL("https://github.com/Anup-SoftwareDev")}/>
-            <FaLinkedin color = 'white' size='30px' style ={{padding: '1%'}} onClick={handleURL("https://www.linkedin.com/in/anup-kuriakose-86201567/")}/>
+            <FaLinkedin color = 'white' size='30px' style ={{padding: '1%'}} onClick={handleURL("https://www.linkedin.com/in/anupkuriakose/")}/>
         </div>
     </div>
     </FormspreeProvider>
