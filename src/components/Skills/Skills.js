@@ -3,14 +3,16 @@ import PageHeader from './../PageHeader/PageHeader'
 import MyKidActivity from './../../img/MyKidActivity.jpeg';
 import sleepingDog from './../../img/sleepingDog.jpg';
 import budget from './../../img/Budget.png';
+import sports4us from './../../img/sports4us.png';
 import { FaGithub} from "react-icons/fa";
 import {BsGlobe} from "react-icons/bs";
+
 
 import projects from './projects.json';
 
 const listTitleStyle = { fontWeight: 900, fontSize: '2rem' , color: '#9B1FE8', marginBottom: '4px'}
 
-const array = [MyKidActivity, sleepingDog, budget]
+const array = [sports4us, MyKidActivity, sleepingDog, budget]
 const Skills = () => {
     //console.log(projects[1].languages)
 
@@ -35,7 +37,7 @@ const Skills = () => {
                             </div>
                              <div className={classes.Box}>
                                 <div className={classes.ImageLink}>
-                                {console.log(project.image)}
+                                {console.log(array[project.image])}
                                     <img src = {array[project.image]} alt = 'project'/>   
                                 </div>
                                 <div className={classes.Details}>
