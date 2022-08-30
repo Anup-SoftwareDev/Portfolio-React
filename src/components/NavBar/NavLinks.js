@@ -27,9 +27,7 @@ const NavLinks = (props) => {
         onClick = {() => props.isMobile && props.closeMobileMenu()}>
             <a href ='/#skills'>Projects</a>
         </motion.li>
-        <motion.li onClick = {() => props.isMobile && props.closeMobileMenu()}>
-            <a href ='/#youtube'>Blogs</a>
-        </motion.li>
+       
         <motion.li 
         initial = {animateFrom}
         animate = {animateTo}
