@@ -1,60 +1,78 @@
 import classes from './Skills.module.css'
 import PageHeader from './../PageHeader/PageHeader'
-import project from './../../img/projects.jpg';
+import MyKidActivity from './../../img/MyKidActivity.jpeg';
+import sleepingDog from './../../img/sleepingDog.jpg';
+import budget from './../../img/Budget.png';
+//import sports4us from './../../img/sports4us.png';
+import { FaGithub} from "react-icons/fa";
+import {BsGlobe} from "react-icons/bs";
 
-const listTitleStyle = { fontWeight: 900, color: '#9B1FE8', marginBottom: '4px'}
 
-const backendSkills = 
-<ul>
-    <li style = {listTitleStyle}>BACKEND</li>
-    <li>Scala - Java - SQL</li>
-    <li>AKKA - Spring Boot - Slick</li>
-</ul>
-const frontEndSkills = 
-<ul>
-    <li style = {listTitleStyle}>FRONTEND</li>
-    <li>ReactJS - HTML - CSS - Redux</li>
-</ul>
+import projects from './projects.json';
 
-const messagingSkills = 
-<ul>
-    <li style = {listTitleStyle}>MESSAGING</li>
-    <li>ActiveMQ</li>
+const listTitleStyle = { fontWeight: 900, fontSize: '2rem' , color: '#9B1FE8', marginBottom: '4px'}
 
-</ul>
-
-const dataScienceSkills = 
-<ul>
-    <li style = {listTitleStyle}>DATA SCIENCE TOOLS</li>
-    <li>ELK Stack - Apache Spark</li>
-</ul>
-const buildToolsSkills = 
-<ul>
-    <li style = {listTitleStyle}>BUILD TOOLS</li>
-    <li>Maven - SBT</li>
-</ul>
-const otherSkills = 
-<ul>
-    <li style = {listTitleStyle}>OTHER</li>
-    <li>Git - Docker - Jenkins - Json - XML</li>
-</ul>
-const totalSkills = [backendSkills, frontEndSkills, messagingSkills, dataScienceSkills, buildToolsSkills,otherSkills  ]
-
+const array = [MyKidActivity, MyKidActivity, sleepingDog, budget]
 const Skills = () => {
+    //console.log(projects[1].languages)
+
+    const handleURL = (url) => {
+      
+        return () => window.open(url, "_blank")
+    }
+
     return ( 
     <div className = {classes.Skills} id = "skills">
-         <PageHeader title={'What about Projects?'}/>
-         <img src={project} alt = "project"></img>
-        <div className={classes.Container}>
-            {totalSkills.map((skills)=>{
-                return(
-                    <div className = {classes.List}>
-                        {skills}
-                    </div>
-                )
-                })};
-        </div>
-    
+            <PageHeader title={'Projects'}/>
+            <div className={classes.Container}>
+                
+            { /*  {totalSkills.map((skills)=>{  */}
+            {projects.map((project)=>{
+                    return(
+                        <div className = {classes.List}>
+                             <div className={classes.Heading}>
+                                <ul>
+                                    <li style = {listTitleStyle}>{project.number}.{project.name}</li>
+                                </ul>
+                            </div>
+                             <div className={classes.Box}>
+                                <div className={classes.ImageLink}>
+                                {console.log(array[project.image])}
+                                    <img src = {array[project.image]} alt = 'project'/>   
+                                </div>
+                                <div className={classes.Details}>
+                                    <div className = {classes.Containers}>Programming Languages
+                                        <ul>
+                                            {project.languages.map((lan)=>{return(<li>{lan}</li>)})}
+                                        </ul>
+                                    </div>
+                                    <div className = {classes.Description}>Description
+                                        <p>{project.Description}</p>
+                                    </div>
+                                    <div className = {classes.Links}>
+                                            Links
+                                            {(project.website)&&
+                                                <div className = {classes.Website}>
+                                                <BsGlobe color = 'white' size='30px' style ={{padding: '0%'}} onClick={handleURL(project.website)}/>
+                                                <a href={project.website} target="_blank" rel="noopener noreferrer">{project.website}</a>
+                                            </div>}
+                                            {(project.github)&&
+                                            <div className = {classes.Github}>
+                                                <FaGithub color = 'white' size='30px' style ={{padding: '0%'}} onClick={handleURL(project.github)}/>
+                                                <a href={project.github} target="_blank" rel="noopener noreferrer">{project.github}</a>
+                                            </div>}          
+                            </div>   
+                                    
+                                </div>
+                            </div> 
+
+                           
+
+                        </div>
+                    )
+                    })};
+            </div>
+                
     </div>
      );
 }
