@@ -3,8 +3,9 @@
     position: relative;
     justify-content: center;
     align-items: center;
-    padding-bottom: 2%;
-   
+    padding-bottom: 3%;
+    padding-top: 3%;
+    
 }
 
 .Container hr{
@@ -12,7 +13,7 @@
     left: 0; 
     width: 124px;
     border: 1px solid #8C1CD1;
-    margin-top: 5%;
+    margin-top: 3%;
 
 }
 
@@ -22,3 +23,33 @@
 
 }
 
+@media (max-width: 830px){
+    .Container{
+        padding-top: 10%;
+    }
+
+}
+
+@media (max-width: 500px){
+    .Container hr{
+        width: 15%
+    }
+
+}
+
+@media (max-width: 400px){
+    .Container{
+        padding-top: 25%;
+    }
+
+}
+@media (max-width: 320px){
+    .Container hr{
+        width: 10%
+    }
+}
+@media (max-width: 260px){
+    .Container hr{
+        display: none;
+    }
+}
