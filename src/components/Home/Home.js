@@ -6,7 +6,7 @@ const Home = () => {
     <div className = {classes.Home} id = "Home">  
         <div className = {classes.Container}>
             <h1 className = {classes.Hello}>Anup Kuriakose</h1>
-            <h1 className = {classes.title}>Full-Stack Developer</h1>
+            <h1 className = {classes.title}>Junior Web Developer</h1>
         </div>
         <img className = {classes.Openimg} src={Openimg} alt='Openimg'></img>
     </div>  
