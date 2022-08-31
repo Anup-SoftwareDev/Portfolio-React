@@ -4,9 +4,7 @@ import classes from './Contact.module.css';
 
 function ContactForm() {
   const [state, handleSubmit] = useForm("xrgjdalo");
- // if (state.succeeded) {
-   //   return <p>Thanks for joining!</p>;
-  //}
+  //state.succeeded = state.submitting&&false 
   return (
     <div className = {classes.MyForm} >
       <form onSubmit={handleSubmit}>
@@ -14,7 +12,8 @@ function ContactForm() {
         <label htmlFor="email">
           Email Address
         </label>
-        {state.succeeded?
+        {console.log(state)}
+        {state.submitting?
         <input
           id=""
           type="" 
@@ -38,7 +37,7 @@ function ContactForm() {
             <label htmlFor="email">
               Message
             </label>
-            {state.succeeded?
+            {state.submitting?
             <textarea
               id=""
               name=""
@@ -58,7 +57,7 @@ function ContactForm() {
           Send Message
         </button>
       {state.succeeded&&
-      <p>Thank you for the message. I will get back to you shortly!</p>}
+      <p>Thank you for the message. I will get back to you shortly!</p>} 
     </form>
     </div>
   );

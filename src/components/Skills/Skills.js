@@ -38,7 +38,7 @@ const Skills = () => {
                             </div>
                              <div className={classes.Box}>
                                 <div className={classes.ImageLink}>
-                                {console.log(project, array[project.image], project.image)}
+                                
                                     <img src = {array[project.image]} alt = 'project'/>   
                                 </div>
                                 <div className={classes.Details}>
