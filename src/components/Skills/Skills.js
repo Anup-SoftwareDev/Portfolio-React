@@ -4,6 +4,7 @@ import MyKidActivity from './../../img/MyKidActivity.jpeg';
 import sleepingDog from './../../img/sleepingDog.jpg';
 //import sports4us from './../../img/sleepingDog.jpg';
 import budget from './../../img/Budget.png';
+import northernDetailing from './../../img/NorthernDetailing.jpg';
 import sports4us from './../../img/sports4us.png';
 import { FaGithub} from "react-icons/fa";
 import {BsGlobe} from "react-icons/bs";
@@ -13,7 +14,7 @@ import projects from './projects.json';
 
 const listTitleStyle = { fontWeight: 900, fontSize: '2rem' , color: '#9B1FE8', marginBottom: '4px'}
 
-const array = [sports4us, MyKidActivity, sleepingDog, budget]
+const array = [northernDetailing, sports4us, MyKidActivity, sleepingDog, budget]
 const Skills = () => {
     //console.log(projects[1].languages)
 
