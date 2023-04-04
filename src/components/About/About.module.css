@@ -1,10 +1,6 @@
 .AboutMe{
     background-color: black;
-    height: 100vh;
     width: 100wh;
-    
-   
- 
 }
 
 .AboutMe .Container{
@@ -14,7 +10,7 @@
 }
 
 .AboutMe .Container .Text{
-    width: 90%;
+    width: 80%;
     margin-left: 3%;
     margin-right: 0%;
     justify-content:center;
@@ -29,7 +25,7 @@
 
 .AboutMe .Container .Text p{
     font-weight: 600;
-    font-size: 1.8rem;  
+    font-size: 1.4rem;  
 }
 
 .AboutMe .Container .Text a button{
@@ -46,10 +42,11 @@
 }
 
 .AboutMe .Container .Photo {
-   width: 30%;
+   width: 50%;
    display: flex;
    justify-content: center;
-   align-items: center;
+   align-items: top;
+   
 }
 
 .AboutMe .Container .Photo .Me{
@@ -59,11 +56,8 @@
     background-color: rgb(66, 57, 57);
 }
 
-@media (max-width: 900px){
+@media (max-width: 1000px){
 
-    .AboutMe{
-        height: 1300px;
-    }
 
     .AboutMe .Container{
         flex-direction: column;
@@ -79,7 +73,8 @@
         width: 60%;
     }   
     .AboutMe .Container .Text{
-        width: 100%;
+        width: 90%;
+        margin-left: 1%;
     }
 }
 
@@ -87,7 +82,7 @@
 
     .AboutMe .Container .Text p{
         font-weight: 600;
-        font-size: 1.5rem;  
+        font-size: 1.2rem;  
     }
     .AboutMe .Container .Text a button{
         font-size: 1.5rem;
@@ -100,16 +95,27 @@
 }
 
 @media (max-width: 500px){
+ 
 
     .AboutMe .Container .Photo .Me{
         height: 70%;
         width: 60%;
      }   
 
+
+.AboutMe .Container .Text h2{
+   
+    font-size: 1.6rem;
+
+}
+
      .AboutMe .Container .Text p{
         font-weight: 600;
-        font-size: 1.5rem;
+       
+       
         justify-content: right;  
     }
 
 }
+
+
