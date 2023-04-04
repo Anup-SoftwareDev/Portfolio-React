@@ -12,7 +12,7 @@ import {BsGlobe} from "react-icons/bs";
 
 import projects from './projects.json';
 
-const listTitleStyle = { fontWeight: 900, fontSize: '2rem' , color: '#9B1FE8', marginBottom: '4px'}
+const listTitleStyle = { fontWeight: 900, fontSize: '1.5rem' , color: '#9B1FE8', marginBottom: '4px'}
 
 const array = [northernDetailing, sports4us, MyKidActivity, sleepingDog, budget]
 const Skills = () => {
