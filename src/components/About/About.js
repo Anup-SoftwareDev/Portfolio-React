@@ -12,8 +12,10 @@ const About = () => {
                 <div className = {classes.Text}>
                     <h2>Hello! I'm Anup 🙂</h2>
                     <p>
-                    I am a Full Stack Web
-Developer with a background in Electronic Engineering.I am passionate about making lives of people around me better through Software Development. When I am not developing software, I love spending time outdoors and playing various sports. 
+                    I am an aspiring IOS/Full Stack Web developer with a background in Electronic Engineering.
+When it comes to Mobile IOS Front-End Development, I possess expertise in Swift programming language and UIKit framework. I also make use of Express and Firestore to produce backend applications to serve the IOS Front-End.
+In terms of Front-End Web Applications, I possess expertise in JavaScript and the React library. Similarly, in building Back-End Applications my expertise revolves around Express and Ruby-on-Rails. 
+ When I am not developing software, I love spending time outdoors and playing various sports. 
                     </p>
                     <a href={resume} target="_blank" rel="noopener noreferrer"> <button>View My Resume</button></a>
                     <a href='./#skills'> <button>View My Projects</button></a>

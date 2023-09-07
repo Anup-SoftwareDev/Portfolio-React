@@ -1,9 +1,9 @@
 import classes from './Skills.module.css'
 import PageHeader from './../PageHeader/PageHeader'
-import MyKidActivity from './../../img/MyKidActivity.jpeg';
-import sleepingDog from './../../img/sleepingDog.jpg';
-import budget from './../../img/Budget.png';
-//import sports4us from './../../img/sports4us.png';
+import SearchAPlace from './../../img/SearchAPlace.jpeg';
+import SolarSystemPlanets from './../../img/SolarSystemPlanets.jpeg';
+import NorthernDetailing from './../../img/NorthernDetailing.png';
+import MyShop from './../../img/MyShop.png';
 import { FaGithub} from "react-icons/fa";
 import {BsGlobe} from "react-icons/bs";
 
@@ -12,7 +12,7 @@ import projects from './projects.json';
 
 const listTitleStyle = { fontWeight: 900, fontSize: '2rem' , color: '#9B1FE8', marginBottom: '4px'}
 
-const array = [MyKidActivity, MyKidActivity, sleepingDog, budget]
+const array = [MyShop, SearchAPlace, SolarSystemPlanets, NorthernDetailing]
 const Skills = () => {
     //console.log(projects[1].languages)
 
@@ -51,10 +51,10 @@ const Skills = () => {
                                     </div>
                                     <div className = {classes.Links}>
                                             Links
-                                            {(project.website)&&
-                                                <div className = {classes.Website}>
-                                                <BsGlobe color = 'white' size='30px' style ={{padding: '0%'}} onClick={handleURL(project.website)}/>
-                                                <a href={project.website} target="_blank" rel="noopener noreferrer">{project.website}</a>
+                                            {(project.url)&&
+                                                <div className = {classes.Url}>
+                                                <BsGlobe color = 'white' size='30px' style ={{padding: '0%'}} onClick={handleURL(project.url)}/>
+                                                <a href={project.url} target="_blank" rel="noopener noreferrer">{project.url}</a>
                                             </div>}
                                             {(project.github)&&
                                             <div className = {classes.Github}>

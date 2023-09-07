@@ -108,13 +108,12 @@
     width: 90%;
     padding-bottom: 5%; 
     font-size: 1.25rem;
-    justify-content: left;   
+    justify-content: left;  
  }
 
  .ImageLink{ 
     width: 50%;
  }
-
 
  .Box .ImageLink .Links{
    
@@ -133,22 +132,24 @@
     width: 90%;
     height: 20%;
     margin-bottom: 5%;
+    
 }
 
 .Links p{
     font-size: 1rem;
 }
 
-.Website{
+.Url{
     display: flex;
     flex-direction: row;
     height: 50%;
   
 }
 
-.Website a{
+.Url a{
     
     margin-left: 0;
+    
 }
 
 .Github{
@@ -162,6 +163,7 @@
 .Github a{
     
     margin-left: 0;
+    
 }
 
 
