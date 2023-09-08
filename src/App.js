@@ -9,10 +9,12 @@ const App = () => {
     return (
     <div className = "App">
         <NavBar/>
-        <Home/>
-        <About/>
-        <Skills/>
-        <Contact/>
+        <div style={{ display: 'flex', flexDirection: 'column' }}>
+            <Home/>
+            <About/>
+            <Skills/>
+            <Contact/>
+        </div>
     </div>
      );
 }

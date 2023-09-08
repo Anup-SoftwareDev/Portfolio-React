@@ -1,8 +1,8 @@
 .AboutMe{
     background-color: black;
-    height: 100vh;
-    width: 100wh;
     
+    width: 100wh;
+    position: relative;
    
  
 }
@@ -11,6 +11,7 @@
     display: flex;
     margin: 0%;
     padding-left: 2%;
+    height: 100%;
 }
 
 .AboutMe .Container .Text{
@@ -61,9 +62,6 @@
 
 @media (max-width: 900px){
 
-    .AboutMe{
-        height: 1300px;
-    }
 
     .AboutMe .Container{
         flex-direction: column;
@@ -113,3 +111,24 @@
     }
 
 }
+
+@media (max-width: 400px){
+
+    .AboutMe .Container .Photo .Me{
+        height: 50%;
+        width: 40%;
+     }   
+
+
+}
+
+@media (max-width: 310px){
+    .AboutMe .Container .Photo .Me{
+       
+        max-width: 200px;
+        max-height: 200px;
+    }
+
+}
+
+

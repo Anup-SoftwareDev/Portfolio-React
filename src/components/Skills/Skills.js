@@ -1,7 +1,7 @@
 import classes from './Skills.module.css'
 import PageHeader from './../PageHeader/PageHeader'
-import SearchAPlace from './../../img/SearchAPlace.jpeg';
-import SolarSystemPlanets from './../../img/SolarSystemPlanets.jpeg';
+import SearchAPlace from './../../img/SearchAPlace.png';
+import SolarSystemPlanets from './../../img/SolarSystemPlanets.png';
 import NorthernDetailing from './../../img/NorthernDetailing.png';
 import MyShop from './../../img/MyShop.png';
 import { FaGithub} from "react-icons/fa";
@@ -54,12 +54,12 @@ const Skills = () => {
                                             {(project.url)&&
                                                 <div className = {classes.Url}>
                                                 <BsGlobe color = 'white' size='30px' style ={{padding: '0%'}} onClick={handleURL(project.url)}/>
-                                                <a href={project.url} target="_blank" rel="noopener noreferrer">{project.url}</a>
+                                                <a href={project.url} target="_blank" rel="noopener noreferrer">{}</a>
                                             </div>}
                                             {(project.github)&&
                                             <div className = {classes.Github}>
                                                 <FaGithub color = 'white' size='30px' style ={{padding: '0%'}} onClick={handleURL(project.github)}/>
-                                                <a href={project.github} target="_blank" rel="noopener noreferrer">{project.github}</a>
+                                                <a href={project.github} target="_blank" rel="noopener noreferrer">{}</a>
                                             </div>}          
                             </div>   
                                     

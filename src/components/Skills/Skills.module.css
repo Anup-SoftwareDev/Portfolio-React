@@ -6,6 +6,7 @@
     display: flex;
     flex-direction: column;
     width: 100vw;
+    
 
 }
 .Heading{
@@ -42,12 +43,13 @@
     flex-wrap: wrap;
     margin-left: 10%;
     margin-right: 10%;
+    /*background-color: black;*/
     background-color: black;
-
 }
 
 .Skills .Container .List {
    
+    /*background-color: black;*/
     background-color: black;
     box-shadow: 0 0 12px 4px white;
     border-radius: 9px;
