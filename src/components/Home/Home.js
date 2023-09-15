@@ -1,15 +1,15 @@
 import classes from './Home.module.css';
-import Openimg from './../../img/Openimg.jpg';
+
 
 const Home = () => {
     return (
-    <div className = {classes.Home} id = "Home">  
+    <div className = {classes.Home} id = "Home">
+         {/*<img src={BackgroundImg} alt="Background" className="backgroundImage"/>*/}
         <div className = {classes.Container}>
             <h1 className = {classes.Hello}>Anup Kuriakose</h1>
-            <h1 className = {classes.title}>Web & iOS Mobile Developer </h1>
-            
+            <h1 className = {classes.title}><span>Web </span> & <span>iOS </span> Mobile Developer </h1>    
         </div>
-        <img className = {classes.Openimg} src={Openimg} alt='Openimg'></img>
+       
     </div>  
      );
 }

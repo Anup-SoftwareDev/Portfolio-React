@@ -1,5 +1,6 @@
 .NavBar{
     background: #181818;
+    background: black;
     height: 80px;
     width: 100%;
     position: fixed;
@@ -10,6 +11,7 @@
     align-items: center;
     color: white;
     position: fixed;
+    
 }
 .NavBar .NameTag {
     position: absolute;
@@ -31,16 +33,17 @@
 }
 .NavBar nav ul li{
     display: inline-block;
-    margin: 40px;
+    margin: 60px;
 }
 
 .NavBar nav ul li a{
     text-decoration: none;
     color: white;
+    font-size: 1.2em;
 }
 
 .NavBar a:hover{
-    border-bottom: 5px solid #8c1cd1
+    border-bottom: 5px solid #45d4d9
 }
 
 .NavBar .MobileNavigation{
@@ -70,7 +73,7 @@
         right: 0;
         width: 100%;
         background: #181818;
-        border-top: 2px solid #8C1CD1;
+        border-top: 2px solid #45d4d9;
 
     }
 
@@ -82,7 +85,10 @@
     }
     .NavBar a:hover{
         border-bottom: none;
-        color: #8C1CD1;
+        color: #45d4d9;
+    }
+    .Hamburger{
+        padding-left: 1em;
     }
 
 

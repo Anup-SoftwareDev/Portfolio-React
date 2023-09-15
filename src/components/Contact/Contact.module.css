@@ -65,6 +65,17 @@
     .MyForm {
         font-size: 1.25rem;       
     }
+    .MyForm .Email input {
+        
+        min-width: 80vw;
+        
+     }
+
+     .MyForm .Message textarea {
+        min-width: 90vw;
+     }
+    
+
     
 
  }

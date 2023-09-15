@@ -1,0 +1,199 @@
+/* src/ImageCollection.css */
+
+.image-collection {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 2em;
+    padding: 2em;
+}
+
+.image-container {
+    position: relative;
+    display: inline-block; /* To ensure that the container fits the image size */
+}
+
+.image-container button {
+    
+    position: absolute;
+    top: 80%; 
+    left: 20%; 
+    right: 20%; 
+    min-height: 2em; 
+    font-size: 1.5em;
+    background-color: #18898f; 
+    color: white; 
+    border-radius: 1em;
+    display: none; /* Hide the text by default */
+    font-weight: bolder
+}
+
+.image-container img {
+    
+    width: 100%;
+    border-radius: 1em;
+    border-width: 0.5em;
+    border-color: #18898f;
+    border-style: solid; 
+    transition: transform 0.3s;
+}
+
+.image-container:hover img{
+    transform: scale(1.05);
+    opacity: 0.02;
+}
+
+.image-container:hover .hover-text {
+    display: block; /* Display the text on hover */
+}
+
+.image-container:hover .hover-text-lang {
+    display: block; /* Display the text on hover */
+}
+
+.image-container:hover button {
+    display: block; /* Display the text on hover */
+
+}
+
+.image-container .hover-text {
+    position: absolute;
+    font-size: 3em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    width: 100%;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    display: flex;
+    justify-content: center; /* Center text horizontally */
+    align-items: center; /* Center text vertically */
+    transition: opacity 0.3s; /* Smooth transition for fading effect */
+    color: #8C1CD1;
+    color: #18898f; /* Text color */
+    font-weight: bolder;
+    display: none; /* Hide the text by default */
+    pointer-events: none; /* This ensures the text doesn't interfere with hover events on the image */
+}
+
+.image-container .hover-text-lang {
+    position: absolute;
+    font-size: 2em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    width: 100%;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    display: flex;
+    justify-content: center; /* Center text horizontally */
+    align-items: center; /* Center text vertically */
+    transition: opacity 0.3s; /* Smooth transition for fading effect */
+    color: white; /* Text color */
+    display: none; /* Hide the text by default */
+    pointer-events: none; /* This ensures the text doesn't interfere with hover events on the image */
+}
+
+@media (max-width: 900px) {
+    .image-collection {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* This reduces the minimum size, allowing for more columns */
+    }
+
+    .image-container .hover-text {
+        font-size: 2em;
+    }
+
+    .image-container .hover-text-lang {
+        font-size: 1.5em;
+    }
+
+    .image-container button {
+        top: 70%;
+        z-index: 10;
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 900px) {
+    .image-collection {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* This reduces the minimum size, allowing for more columns */
+    }
+}
+
+@media (max-width: 600px) {
+    .image-collection {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* This reduces the minimum size, allowing for more columns */
+    }
+    .image-container .hover-text {
+        top: 30%;
+        font-size: 1.8em;
+    }
+
+    .image-container .hover-text-lang {
+
+        font-size: 1.2em;       
+    }
+}
+
+@media (max-width: 500px) {
+    .image-collection {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* This reduces the minimum size, allowing for more columns */
+    }
+
+    .image-container .hover-text {
+        top: 20%;
+        font-size: 1.5em;
+    }
+
+    .image-container .hover-text-lang {
+        font-size: 1em;
+        top: 50%;
+    }
+}
+
+@media (max-width: 400px) {
+    .image-collection {
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); /* This reduces the minimum size, allowing for more columns */
+    }
+
+    .image-container .hover-text {
+        top: 20%;
+        font-size: 1em;
+    }
+
+    .image-container .hover-text-lang {
+        font-size: 0.8em;
+        top: 50%;
+    }
+
+    .image-container button {
+        font-size: 1em;
+        left: 0%; 
+        right: 0%;
+        font-weight: bolder;
+    }
+    .image-container img {
+        border-width: 0.3em;
+        
+    }
+}
+
+@media (max-width: 290px) {
+    
+
+    .image-container .hover-text {
+        top: 30%;
+        font-size: 1.5em;
+    }
+
+    .image-container .hover-text-lang {
+        font-size: 1.2em;
+        top: 50%;
+    }
+
+    .image-container button {
+        font-size: 1.2em;
+        left: 0%; 
+        right: 0%;
+        font-weight: bolder;
+    }
+}

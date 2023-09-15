@@ -8,8 +8,8 @@ import {useState} from 'react';
 
 const MobileNavigation = () => {
     const [open, setOpen] = useState(false);
-    const hamburgerIcon = <GiHamburgerMenu className = {classes.Hamburger} size = '60px' color='white' onClick = {()=>setOpen(!open)}/>
-    const closeIcon = <CgCloseR className = {classes.Hamburger} size = '60px' color='white' onClick = {()=>setOpen(!open)}/>
+    const hamburgerIcon = <GiHamburgerMenu className = {classes.Hamburger} size = '40px' color='white' onClick = {()=>setOpen(!open)}/>
+    const closeIcon = <CgCloseR className = {classes.Hamburger} size = '40px' color='white' onClick = {()=>setOpen(!open)}/>
 
     const closeMobileMenu = () => setOpen(false)
     return ( 

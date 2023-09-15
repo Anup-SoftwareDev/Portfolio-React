@@ -1,0 +1,172 @@
+.Home{
+    background-color: black;
+    display: flex;
+    height: 100vh;
+    padding-top: 80px;
+    position: relative;
+    width: 100%;
+ 
+}
+
+.Home .Container h1{
+    margin: 0;
+    color: white;  
+}
+
+.Home .Container .Hello{
+    margin: 0px;
+    color: white;  
+    font-size: 5rem;
+    
+}
+
+.Home .Container .title{
+    margin: 0px;
+    color: white;  
+    font-size: 2rem;
+    background-color: black;
+}
+
+.Home .Container {
+    z-index: 998;
+    margin-left: 0%;
+    margin-top: 15%;
+    padding-left: 5%;
+    background-color: black;
+
+    
+}
+
+.Home img{
+    background-color: rgb(255, 0, 187);
+    height: 70%;
+    width: 60%;
+    position: relative;
+    margin-right: 0%;
+    padding-right: 0%;
+    padding-left: 0%;
+    top: 0%;
+}
+@media (max-width: 1250px){
+
+    .Home img{
+        height: 65%;
+        width: 60%;
+       
+}
+
+
+.Home .Container .Hello{
+    margin: 0px;
+    color: white;  
+    font-size: 3.5rem;
+}
+
+}
+@media (max-width: 1120px){
+
+    .Home img{
+        height: 60%;
+        width: 60%;
+       
+}
+
+.Home .Container {
+    
+    padding-left: 8%;
+
+}
+
+}
+
+@media (max-width: 950px){
+
+    .Home{
+        flex-direction: column;
+        padding-top: 0%;
+        padding-left: 8%;
+       
+        
+    }
+    .Home img{
+        height: 60%;
+        width: 100%;
+        max-width: 600px;
+       
+    }
+
+.Home .Container {
+    
+    padding-left: 0;
+    width: 100%;
+}
+.Home .Container .Hello{
+    
+    font-size: 4rem;
+}
+
+.Home .Container .title{
+    margin: 0px;
+    color: white;  
+    font-size: 1.8rem;
+}
+
+
+}
+
+@media (max-width: 640px){
+
+    .Home .Openimg{
+        height: 55%;
+        width: 100%;
+        max-width: 550px;
+    }
+
+}
+
+@media (max-width: 500px){
+
+    .Home img{
+        height: 45%;
+        width: 100%;
+        max-width: 550px;
+    }
+
+}
+
+@media (max-width: 456px){
+
+    .Home .Container {
+    
+        padding-top: 15%;
+    
+    }
+
+    .Home img{
+        height: 45%;
+        width: 100%;
+        max-width: 600px;
+        max-height: 300px;
+    }
+
+
+    .Home .Container .Hello{
+    
+        font-size: 3.5rem;
+    }
+    
+    .Home .Container .title{
+        
+        font-size: 1.5rem;
+    }
+
+}
+@media (max-width: 410px){
+    .Home img{
+        height: 45%;
+        width: 100%;
+        max-width: 800px;
+        max-height: 280px;
+    }
+
+}

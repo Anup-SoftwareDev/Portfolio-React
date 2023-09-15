@@ -18,7 +18,7 @@ In terms of Front-End Web Applications, I possess expertise in JavaScript and th
  When I am not developing software, I love spending time outdoors and playing various sports. 
                     </p>
                     <a href={resume} target="_blank" rel="noopener noreferrer"> <button>View My Resume</button></a>
-                    <a href='./#skills'> <button>View My Projects</button></a>
+                    <a href='./#projects'> <button>View My Projects</button></a>
 
                 </div>
                 <div className = {classes.Photo}>

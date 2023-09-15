@@ -8,8 +8,6 @@ import { FaGithub} from "react-icons/fa";
 import {BsGlobe} from "react-icons/bs";
 import Testflight from './../../img/Testflight.png';
 import Appstore  from './../../img/Appstore.png';
-
-
 import projects from './projects.json';
 
 const listTitleStyle = { fontWeight: 900, fontSize: '2rem' , color: '#9B1FE8', marginBottom: '4px'}
