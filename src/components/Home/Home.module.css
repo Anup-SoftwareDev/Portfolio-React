@@ -285,17 +285,19 @@ html, body {
         
     }
 
-    .Home .Container .Buttons button{
+    .Home .Container .Buttons a button{
         width: 200px;
         display: flex;
         justify-content: center;
         align-items: center;
+        text-decoration: none;
     }
 
     .Home .Container .Buttons .ProjectsButton{
         margin-left: 0;
         margin-top: 0.5em;
         text-align: center;
+        
     }
 }
 

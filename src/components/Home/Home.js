@@ -9,10 +9,10 @@ const Home = () => {
             <h1 className = {classes.Hello}>Anup Kuriakose</h1>
             <h1 className = {classes.title}><span>Web </span> & <span>iOS </span> Mobile Developer </h1>   
             <div className = {classes.Buttons}>
-                <a href="./about">
-                    <button >About Me</button>
+                <a style = {{textDecoration: "none"}} href="./about">
+                    <button>About Me</button>
                 </a>
-                <a href="./projects">
+                <a style = {{textDecoration: "none"}}  href="./projects">
                     <button className = {classes.ProjectsButton} >View Projects</button>
                 </a>
             </div>
