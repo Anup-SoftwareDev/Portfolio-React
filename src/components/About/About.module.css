@@ -1,36 +1,85 @@
 .AboutMe{
     background-color: black;
-    
     width: 100wh;
-    position: relative;
-   
- 
+    position: relative;  
 }
 
-.AboutMe .Container{
+.AboutMe .Container
+{
     display: flex;
     margin: 0%;
     padding-left: 2%;
     height: 100%;
+    
 }
-
-.AboutMe .Container .Text{
+.AboutMe .Container .Text
+{
     width: 90%;
     margin-left: 3%;
     margin-right: 0%;
-    justify-content:center;
-    
+    justify-content: center; 
 }
 
-.AboutMe .Container .Text h2{
-    font-weight: 900;
-    font-size: 2rem;
+.AboutMe .Container .Text .SkillsContainer{
+    margin-bottom: 2em;
+}
 
+.AboutMe .Container .Text .SkillsContainer .SkillsHeading{
+    color: white; 
+    font-weight: bolder;
+    font-size: 2em;  
+}
+
+.AboutMe .Container .Text .SkillsContainer .Skillslist{
+    display: flex;
+    margin-top: 1em; 
+    margin-bottom: 1em; 
+    justify-content: space-around
+}
+
+.AboutMe .Container .Text .Skillslist .LanguageList{
+    background-color: #18898f;
+    
+    min-width: 220px;
+    
+    border-color: #18898f;
+    
+    border-radius: 22px;
+    
+   
+}
+
+.AboutMe .Container .Text .Skillslist .LanguageList h2{
+    color: black;
+    font-size: 1.5em;
+    margin-top: 0.5em;
+    margin-left: 0.4em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.AboutMe .Container .Text .Skillslist .LanguageList ul{  
+    font-size: 1.3em;
+    font-weight: bolder;
+    color: white;
+    
+    list-style-type: none;
+    padding-left: 0.5em;   /* This will remove any default padding */
+    margin: 0;    /* This will remove any default margin */
+}
+
+.AboutMe .Container .Text .Skillslist .LanguageList ul li{  
+   margin-bottom: 1em;
+   margin-left: 0.5em;
 }
 
 .AboutMe .Container .Text p{
     font-weight: 600;
-    font-size: 1.8rem;  
+    font-size: 1.8rem;
+    text-align: justify;
+    padding-right: 1em;
+
 }
 
 .AboutMe .Container .Text a button{
@@ -40,14 +89,19 @@
     margin-bottom: 5%;
     color: white;
     background-color: black;
-    border-radius: 5%;
-    box-shadow: 0 0 5px 5px white;
-    
-    
+    border-style: solid;
+    border-width: 0.2em;
+    border-color: #45d4d9;
+    border-radius: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 0.3em;
+    padding-bottom: 0.3em;
+    /*box-shadow: 0 0 5px 5px #45d4d9;*/
 }
 
 .AboutMe .Container .Photo {
-   width: 30%;
+   width: 40%;
    display: flex;
    justify-content: center;
    align-items: center;
@@ -58,6 +112,13 @@
     margin-top: 10%;
     border-radius: 20%;
     background-color: rgb(66, 57, 57);
+}
+
+@media (max-width: 1150px){
+
+    .AboutMe .Container .Text .Skillslist .LanguageList{
+        min-width: 170px;
+    }
 }
 
 @media (max-width: 900px){
@@ -88,13 +149,26 @@
         font-size: 1.5rem;  
     }
     .AboutMe .Container .Text a button{
-        font-size: 1.5rem;
+        font-size: 1.4rem;
     }
     .AboutMe .Container .Photo .Me{
         height: 60%;
         width: 50%;
-     }   
+     }  
+     
+     .AboutMe .Container .Text .Skillslist .LanguageList{
+        min-width: 130px;
+    }
 
+    .AboutMe .Container .Text .Skillslist .LanguageList h2{
+    font-size: 1.4em;
+    
+    }
+
+    .AboutMe .Container .Text .Skillslist .LanguageList ul{
+        font-size: 1.3em;
+        
+        }
 }
 
 @media (max-width: 500px){
@@ -109,6 +183,21 @@
         font-size: 1.5rem;
         justify-content: right;  
     }
+    .AboutMe .Container .Text .Skillslist .LanguageList{
+        min-width: 100px;
+    }
+
+    .AboutMe .Container .Text .Skillslist .LanguageList h2{
+        font-size: 1.2em;
+        margin-right: 0.5em;
+        
+        
+        }
+
+        .AboutMe .Container .Text .Skillslist .LanguageList ul{
+            font-size: 1.2em;
+            
+            }
 
 }
 
@@ -118,6 +207,29 @@
         height: 50%;
         width: 40%;
      }   
+     .AboutMe .Container .Text .Skillslist{
+        flex-direction: column;
+     }
+     .AboutMe .Container .Text .Skillslist .LanguageList{
+        min-width: 200px;
+        
+        margin-bottom: 1em;
+        border-radius: 20px;
+        margin-left: auto;
+        margin-right: auto;
+     }
+
+     .AboutMe .Container .Text .Skillslist .LanguageList h2{
+        font-size: 1.8em;
+      
+        
+        }
+
+        .AboutMe .Container .Text .Skillslist .LanguageList ul{
+            font-size: 1.5em;
+            margin-right: 0.5em;
+        }
+ 
 
 
 }

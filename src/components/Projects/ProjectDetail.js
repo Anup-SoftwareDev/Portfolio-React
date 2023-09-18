@@ -68,7 +68,7 @@ const ProjectDetail = () => {
                         <div className = "detail-content">{projects[projectIndex].languages.join(' / ')}</div>
                         <br />
                         <div className = "detail-title">Description:</div>
-                        <div className = "detail-content" style = {{marginBottom: '1em', marginRight: '2em'}}>{projects[projectIndex].Description}</div>
+                        <div className = "detail-content" style = {{marginBottom: '1em', marginRight: '2em', textAlign: 'justify'}}>{projects[projectIndex].Description}</div>
                         <div className = "detail-title" style = {{marginBottom: '0.3em'}}>Links:</div>
                         {(projects[projectIndex].url)&&
                         <div className= 'url-icon'>

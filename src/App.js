@@ -26,6 +26,7 @@ const App = () => {
                             <Route path="/" element={
                                 <>
                                       <Home/>
+                                     
                                     <About/>
                                     <ImageCollection/>
                                     {/*<Skills/>*/}

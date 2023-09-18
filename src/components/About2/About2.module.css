@@ -1,0 +1,134 @@
+.AboutMe{
+    background-color: black;
+    
+    width: 100wh;
+    position: relative;
+   
+ 
+}
+
+.AboutMe .Container{
+    display: flex;
+    margin: 0%;
+    padding-left: 2%;
+    height: 100%;
+}
+
+.AboutMe .Container .Text{
+    width: 90%;
+    margin-left: 3%;
+    margin-right: 0%;
+    justify-content:center;
+    
+}
+
+.AboutMe .Container .Text h2{
+    font-weight: 900;
+    font-size: 2rem;
+
+}
+
+.AboutMe .Container .Text p{
+    font-weight: 600;
+    font-size: 1.8rem;  
+}
+
+.AboutMe .Container .Text a button{
+    font-weight: 600;
+    font-size: 1.6rem; 
+    margin-right: 3%;
+    margin-bottom: 5%;
+    color: white;
+    background-color: black;
+    border-radius: 5%;
+    box-shadow: 0 0 5px 5px white;
+    
+    
+}
+
+.AboutMe .Container .Photo {
+   width: 30%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.AboutMe .Container .Photo .Me{
+    height: 350px;
+    margin-top: 10%;
+    border-radius: 20%;
+    background-color: rgb(66, 57, 57);
+}
+
+@media (max-width: 900px){
+
+
+    .AboutMe .Container{
+        flex-direction: column;
+        align-items:center;
+    }
+    .AboutMe .Container .Photo {
+        width: 100%;
+    }
+    .AboutMe .Container .Photo .Me{
+        max-height: 400px;
+        max-width: 300px;
+        height: 60%;
+        width: 60%;
+    }   
+    .AboutMe .Container .Text{
+        width: 100%;
+    }
+}
+
+@media (max-width: 700px){
+
+    .AboutMe .Container .Text p{
+        font-weight: 600;
+        font-size: 1.5rem;  
+    }
+    .AboutMe .Container .Text a button{
+        font-size: 1.5rem;
+    }
+    .AboutMe .Container .Photo .Me{
+        height: 60%;
+        width: 50%;
+     }   
+
+}
+
+@media (max-width: 500px){
+
+    .AboutMe .Container .Photo .Me{
+        height: 70%;
+        width: 60%;
+     }   
+
+     .AboutMe .Container .Text p{
+        font-weight: 600;
+        font-size: 1.5rem;
+        justify-content: right;  
+    }
+
+}
+
+@media (max-width: 400px){
+
+    .AboutMe .Container .Photo .Me{
+        height: 50%;
+        width: 40%;
+     }   
+
+
+}
+
+@media (max-width: 310px){
+    .AboutMe .Container .Photo .Me{
+       
+        max-width: 200px;
+        max-height: 200px;
+    }
+
+}
+
+

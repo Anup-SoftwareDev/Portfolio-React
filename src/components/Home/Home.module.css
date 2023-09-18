@@ -24,30 +24,45 @@ html, body {
 
 .Home .Container .Hello{
     margin: 0px;
-    color: white;  
-    font-size: 6rem;
+    color: white; 
     
+    font-size: 6rem;
+    background-color: black;
+
+    border-radius: 1.8rem;
+    border-style: solid;
+    border-width: 0.4rem;
+    border-color: #18898f;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    -webkit-animation: slide-in-top 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-in-top 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
+    
+
 
 .Home .Container .title{
     margin: 0px;
-    color: black; 
+    margin-top: 0.5em;
+    color: #18898f; 
+    font-size: 2.3em;
+    background-color: black;
     
-    font-size: 2rem;
-    background-color: white;
     border-radius: 1rem;
     border-style: solid;
     border-width: 0.4rem;
-    border-color: #45d4d9;
     border-color: #18898f;
     padding-left: 1rem;
     padding-right: 1rem;
     display: inline-block;
+    -webkit-animation: slide-in-right 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s both;
+                animation: slide-in-right 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s both;
+    
     
 }
 
 .Home .Container .title span{
-    color: #18898f; 
+    color: white;
     font-weight: bolder; 
 }
 
@@ -58,6 +73,114 @@ html, body {
     padding-left: 5%;
     background-color: transparent; 
 }
+
+.Home .Container .Buttons{
+    margin-top: 1em;
+    display: flex;
+    justify-content: left;
+    -webkit-animation: slide-in-bottom 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) 2s both;
+	        animation: slide-in-bottom 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) 2s both;
+}
+
+.Home .Container .Buttons button{
+    min-width: 160px;
+    min-height: 45px;
+    border-style: solid;
+    border-width: 0.2em;
+    border-color: #18898f;
+    border-radius: 16px;
+    font-weight: bolder;
+    font-size: 1.2em;
+    background-color: #18898f;
+    color: white;
+   
+}
+
+.Home .Container .Buttons .ProjectsButton{
+    margin-left: 1em;
+}
+/*Slide-in-top animation*/
+
+ @-webkit-keyframes slide-in-top {
+    0% {
+      -webkit-transform: translateY(-1000px);
+              transform: translateY(-1000px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  @keyframes slide-in-top {
+    0% {
+      -webkit-transform: translateY(-1000px);
+              transform: translateY(-1000px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  /*Slide-in-right animation*/
+
+  @-webkit-keyframes slide-in-right {
+    0% {
+      -webkit-transform: translateX(1000px);
+              transform: translateX(1000px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  @keyframes slide-in-right {
+    0% {
+      -webkit-transform: translateX(1000px);
+              transform: translateX(1000px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+/*Slide-in-bottom animation*/
+
+  @-webkit-keyframes slide-in-bottom {
+    0% {
+      -webkit-transform: translateY(1000px);
+              transform: translateY(1000px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  @keyframes slide-in-bottom {
+    0% {
+      -webkit-transform: translateY(1000px);
+              transform: translateY(1000px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+
 
 @media (max-width: 1350px){
 
@@ -85,11 +208,11 @@ html, body {
 
 
     .Home .Container .Hello{
-       font-size: 4.6rem;   
+       font-size: 5rem;   
     }
 
     .Home .Container .title{ 
-        font-size: 1.8rem;  
+        font-size: 2rem;  
     }
   
 
@@ -106,11 +229,13 @@ html, body {
 @media (max-width: 950px){
 
     .Home .Container .Hello{
-        font-size: 4rem;   
+        font-size: 4rem; 
+        margin-right: 1.5rem;
+  
      }
  
      .Home .Container .title{ 
-         font-size: 1.3rem;  
+         font-size: 1.6rem;  
      }
      
   
@@ -120,6 +245,11 @@ html, body {
          padding-left: 5%;
         
      }
+
+     .Home .Container .Buttons button{
+        min-width: 120px;
+        min-height: 35px;
+    }
 
 
 }
@@ -131,8 +261,9 @@ html, body {
      }
  
      .Home .Container .title{ 
-         font-size: 1.rem;
-         max-width: 190px;  
+         font-size: 1.6rem;
+         margin-right: 2rem;
+          
      }
   
  
@@ -143,18 +274,45 @@ html, body {
         
      }
 
+     .Home .Container .Buttons button{
+       flex-direction: column;
+    }
+
+}
+@media (max-width: 350px){
+    .Home .Container .Buttons {
+        flex-direction: column;
+        
+    }
+
+    .Home .Container .Buttons button{
+        width: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .Home .Container .Buttons .ProjectsButton{
+        margin-left: 0;
+        margin-top: 0.5em;
+        text-align: center;
+    }
 }
 
-
 @media (max-width: 260px){
+
+    .Home .Container .Buttons button{
+        max-width: 100px;
+        font-size: 0.9em;
+    }
 
     .Home .Container .Hello{
         font-size: 2rem;   
      }
  
      .Home .Container .title{ 
-         font-size: 0.8rem;  
-         max-width: 70px; 
+         font-size: 1.3rem;  
+          
      }
     
      .Home .Container {
