@@ -75,7 +75,7 @@
 
 .AboutMe .Container .Text p{
     font-size: 1.8rem;
-    
+    text-align: justify;
     padding-right: 1em;
 
 }
