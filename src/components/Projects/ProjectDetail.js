@@ -90,6 +90,10 @@ const ProjectDetail = () => {
                                 <FaGithub color = 'blue' size='25px' onClick={handleURL(projects[projectIndex].github)} style={{ flexShrink: 0 }}/>
                                 <a href={projects[projectIndex].github} target="_blank" rel="noopener noreferrer">{projects[projectIndex].github}</a>
                         </div>}
+                        <a className = "button" style = {{textDecoration: "none"}}  href="../projects">
+                            <button className = "projects-button" >Back to Projects</button>
+                        </a>
+
                 </div>
             </div>
         </div>

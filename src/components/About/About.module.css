@@ -132,6 +132,14 @@
         margin-left: 1em;
      }
 
+     .AboutMe .Container .Text .SkillsContainer .SkillsHeading{
+        
+        font-size: 1.7em;  
+        margin-bottom: 1.5em;
+        margin-top: 1.5em;
+       
+    }
+
 
     .AboutMe .Container .Text p{
         text-align: center;
@@ -145,8 +153,8 @@
         width: 100%;
     }
     .AboutMe .Container .Photo .Me{
-        max-height: 400px;
-        max-width: 300px;
+        max-height: 350px;
+        max-width: 250px;
         height: 60%;
         width: 60%;
     }   
@@ -236,11 +244,11 @@
      }
 
      .AboutMe .Container .Text .Skillslist .LanguageList h2{
-        font-size: 1.6em;
+        font-size: 1.4em;
         }
 
         .AboutMe .Container .Text .Skillslist .LanguageList ul{
-            font-size: 1.5em;
+            font-size: 1.3em;
             margin-right: 0.5em;
         }
  
