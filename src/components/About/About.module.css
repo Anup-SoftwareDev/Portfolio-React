@@ -59,12 +59,13 @@
     color: white;
     
     list-style-type: none;
-    padding-left: 0.5em;   /* This will remove any default padding */
+    padding-left: 0.8em;   /* This will remove any default padding */
     margin: 0;    /* This will remove any default margin */
+    padding-bottom: 0.8em;
 }
 
 .AboutMe .Container .Text .Skillslist .LanguageList ul li{  
-   margin-bottom: 1em;
+   margin-bottom: 0.4em;
    margin-left: 0.5em;
 }
 

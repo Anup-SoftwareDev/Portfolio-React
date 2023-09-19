@@ -40,7 +40,7 @@
 
 
 .project-detail-box .image-detail-box .image-box {
-    background-color: white; 
+     
     display: flex;     
     justify-content: left;
     align-items: center; 
@@ -49,6 +49,7 @@
 
 .project-detail-box .image-detail-box .image-box img{
     max-width: 100%;
+   
 }
 .project-detail-box .image-detail-box .detail-box{
     width: 30%;
@@ -109,7 +110,7 @@
 
     .project-detail-box{
         width: 100%;
-
+        background-color: white
     }
     .project-detail-box .logo-box img{
         width: 50px;   
@@ -117,10 +118,12 @@
 
     .project-detail-box .logo-box .project-title{
         font-size: 1.5em;
+        
     }
 
     .project-detail-box .image-detail-box{
        flex-direction: column;
+       
     }
 
     .project-detail-box .image-detail-box .image-box {
@@ -141,6 +144,16 @@
 
      .project-detail-box .image-detail-box .detail-box{
         width: 100%;
+        padding-left: 0;
+        background-color: white;
+    }
+    .project-detail-box .image-detail-box .detail-box .detail-title{
+        padding-left: 0.8em;
+    }
+    .project-detail-box .image-detail-box .detail-box .detail-content{
+        padding-left: 0.8em;
+    }
+    .project-detail-box .image-detail-box .detail-box .url-icon{
         padding-left: 0.8em;
     }
 }

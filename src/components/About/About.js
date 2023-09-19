@@ -48,13 +48,15 @@ const About = () => {
                   </div>
 
               </div>
-              <a href={resume} target="_blank" rel="noopener noreferrer">
-                <button>View My Resume</button>
-              </a>
-              <a href="./projects">
-                <button>View My Projects</button>
-              </a>
-             
+
+              <div>
+                <a href={resume} target="_blank" rel="noopener noreferrer">
+                  <button>View My Resume</button>
+                </a>
+                <a href="./projects">
+                  <button>View My Projects</button>
+                </a>
+              </div>
         </div>
         <div className={classes.Photo}>
               <img className={classes.Me} src={Anup} alt="Anup"></img>

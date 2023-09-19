@@ -25,13 +25,12 @@ html, body {
 .Home .Container .Hello{
     margin: 0px;
     color: white; 
-    
     font-size: 6rem;
-    background-color: black;
+    background-color: transparent;
 
     border-radius: 1.8rem;
     border-style: solid;
-    border-width: 0.4rem;
+    border-width: 0rem;
     border-color: #18898f;
     padding-left: 1rem;
     padding-right: 1rem;
@@ -75,7 +74,7 @@ html, body {
 }
 
 .Home .Container .Buttons{
-    margin-top: 1em;
+    margin-top: 3em;
     display: flex;
     justify-content: left;
     -webkit-animation: slide-in-bottom 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) 2s both;
