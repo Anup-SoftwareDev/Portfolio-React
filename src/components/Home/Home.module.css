@@ -98,7 +98,7 @@ html, body {
 .Home .Container .Buttons .ProjectsButton{
     margin-left: 1em;
 }
-/*Slide-in-top animation*/
+/*
 
  @-webkit-keyframes slide-in-top {
     0% {
@@ -125,7 +125,7 @@ html, body {
     }
   }
 
-  /*Slide-in-right animation*/
+ 
 
   @-webkit-keyframes slide-in-right {
     0% {
@@ -152,7 +152,7 @@ html, body {
     }
   }
 
-/*Slide-in-bottom animation*/
+
 
   @-webkit-keyframes slide-in-bottom {
     0% {
@@ -179,7 +179,7 @@ html, body {
     }
   }
   
-
+*/
 
 @media (max-width: 1350px){
 
