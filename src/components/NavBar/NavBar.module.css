@@ -11,6 +11,8 @@
     align-items: center;
     color: white;
     position: fixed;
+    border-bottom: 2px solid #45d4d9
+
     
 }
 .NavBar .NameTag {
@@ -53,10 +55,13 @@
     .NavBar .Navigation{
         display: none;
     }
+  
     .NavBar .MobileNavigation{
         display: flex;
         align-items: center;
+        justify-content: right;
          width: 100%;
+         
     }
 
     .NavBar .MobileNavigation .Hamburger{
@@ -88,7 +93,7 @@
         color: #45d4d9;
     }
     .Hamburger{
-        padding-left: 1em;
+        padding-right: 1em;
     }
 
 
