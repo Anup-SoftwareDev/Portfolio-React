@@ -71,6 +71,13 @@
     .NavBar .Navigation{
         display: none;
     }
+
+    .NavBar .NavBarName{
+        text-decoration: none;
+        position: absolute; 
+        left: 0.5em; 
+        font-size: 1.6em;
+    }
   
     .NavBar .MobileNavigation{
         display: flex;
