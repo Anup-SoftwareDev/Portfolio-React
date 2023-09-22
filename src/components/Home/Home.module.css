@@ -60,10 +60,13 @@ html, body {
     
 }
 
+
 .Home .Container .title span{
     color: white;
     font-weight: bolder; 
 }
+
+
 
 .Home .Container {
     z-index: 998;
